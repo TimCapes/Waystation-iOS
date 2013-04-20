@@ -14,7 +14,7 @@
 }
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (nonatomic, strong) SAWSineWaveView *sineWave;
-
+@property (nonatomic, strong) UIProgressView *progressView;
 @end
 
 @implementation SAWWaystationViewController
@@ -43,6 +43,8 @@
     [self.view setBackgroundColor:[UIColor blackColor]];
     self.sineWave = [[[SAWSineWaveView alloc] initWithFrame:CGRectMake(0,0,320,338)]autorelease];
     self.sineWave.backgroundColor = [UIColor clearColor];
+    
+    
     [self.view addSubview:self.sineWave];
     [self.view sendSubviewToBack:self.sineWave];
     [self.view sendSubviewToBack:self.mapView];
@@ -82,10 +84,15 @@
         [self.view sendSubviewToBack:self.greetings];
         [self.mapView setFrame:CGRectMake(0,0,568,320)];
         [self.sineWave setFrame:CGRectMake(0,0,568,320)];
+        //self.progressView = [[[UIProgressView alloc]initWithFrame:CGRectMake(20,280,540,300)]autorelease];
+        //[self.progressView setFrame:CGRectMake];
+        [self.view addSubview: self.progressView];
     } else {
 
         [self.mapView setFrame:CGRectMake(0,0,320,330)];
         [self.sineWave setFrame:CGRectMake(0,0,320,330)];
+        [self.progressView removeFromSuperview];
+        self.progressView = nil;
         //[self.scrollView setFrame:CGRectMake(0,368,320,200)];
        // [self.greetings setFrame: CGRectMake(0,330,320,38)];
     }

@@ -30,9 +30,9 @@
     CGContextSetRGBStrokeColor(context, 255.0, 255.0, 255.0, 255.0); // yellow line
     CGContextBeginPath(context);
     CGMutablePathRef path = CGPathCreateMutable();
-    float x=50;
+    float x=125;
     float y=338;
-    float yc=50;
+    float yc=75;
     float w=0;
     while (w<=338){ //rectLayer.frame.size.width) {
         CGPathMoveToPoint(path, nil, w,y/2);
