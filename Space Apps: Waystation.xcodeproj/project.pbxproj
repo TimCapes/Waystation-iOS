@@ -45,6 +45,7 @@
 		AC8DB79D172300A500943B9A /* RightController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB79A172300A300943B9A /* RightController.m */; };
 		AC8DB79E172300A500943B9A /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB79C172300A400943B9A /* LeftController.m */; };
 		AC8DB7A01723013800943B9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB79F1723013800943B9A /* QuartzCore.framework */; };
+		AC8DB7A2172305A000943B9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7A1172305A000943B9A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		AC8DB79B172300A300943B9A /* LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
 		AC8DB79C172300A400943B9A /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
 		AC8DB79F1723013800943B9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AC8DB7A1172305A000943B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		AC8DB7371722FBB300943B9A = {
 			isa = PBXGroup;
 			children = (
+				AC8DB7A1172305A000943B9A /* Default-568h@2x.png */,
 				AC8DB79F1723013800943B9A /* QuartzCore.framework */,
 				AC8DB7941722FEB100943B9A /* AudioToolbox.framework */,
 				AC8DB7921722FEAA00943B9A /* Twitter.framework */,
@@ -285,6 +288,7 @@
 				AC8DB7851722FCF100943B9A /* tick.aiff in Resources */,
 				AC8DB78D1722FD0000943B9A /* PhotoViewController.xib in Resources */,
 				AC8DB78F1722FD0000943B9A /* OverlayViewController.xib in Resources */,
+				AC8DB7A2172305A000943B9A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
