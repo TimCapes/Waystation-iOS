@@ -13,7 +13,8 @@
 @property(nonatomic,strong) UITableView *tableView;
 @property(nonatomic,retain) DDMenuController *root;
 @property(nonatomic,readonly) UIPanGestureRecognizer *pan;
-
+@property(nonatomic, retain) NSURLConnection *myConnection;
+@property(nonatomic, retain) NSMutableData *myData;
 
 - (IBAction)sendEasyTweet:(id)sender;
 

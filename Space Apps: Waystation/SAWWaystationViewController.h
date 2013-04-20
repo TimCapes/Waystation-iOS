@@ -17,5 +17,6 @@
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) MKPlacemark *placemark;
 
+-(NSMutableDictionary *) addressForSending;
 
 @end

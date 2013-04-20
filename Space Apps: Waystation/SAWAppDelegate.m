@@ -25,6 +25,7 @@
     
     // Override point for customization after application launch.
     SAWWaystationViewController *mainController = [[[SAWWaystationViewController alloc] initWithNibName:@"SAWWaystationViewController" bundle:nil] autorelease];
+    self.waystation = mainController;
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
     navController.navigationBar.hidden = YES;
     //    [navController.navigationBar setShadowImage:[[UIImage alloc] init]];

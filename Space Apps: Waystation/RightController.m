@@ -8,6 +8,7 @@
 
 #import "RightController.h"
 #import "SAWAppDelegate.h"
+#import "SAWWaystationViewController.h"
 #import "PhotoViewController.h"
 #import <Twitter/Twitter.h>
 #import <Accounts/Accounts.h>
@@ -52,10 +53,8 @@
         tableView.dataSource = (id<UITableViewDataSource>)self;
         tableView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
         [self.view addSubview:tableView];
-        self.tableView = tableView;
-        
+        self.tableView = tableView;        
     }
-    
 }
 
 - (void)viewDidUnload {
@@ -134,12 +133,15 @@
             case TWTweetComposeViewControllerResultCancelled:
                 // The cancel button was tapped.
                 output = @"Tweet cancelled.";
+                [self postToAPI];
                 break;
+                //NSError *error;
             case TWTweetComposeViewControllerResultDone:
                 // The tweet was sent.
                 output = @"Tweet done.";
                 break;
             default:
+
                 break;
         }
         
@@ -151,6 +153,47 @@
     
     // Present the tweet composition view controller modally.
     [self presentModalViewController:tweetViewController animated:YES];
+}
+
+- (void) postToAPI {
+SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
+//NSMutableDictionary *myDictionary= [appDelegate.waystation addressForSending];
+self.myData =[[[NSMutableData alloc] init] autorelease];
+NSError *error;
+NSData *jsonPayload = [NSJSONSerialization dataWithJSONObject:appDelegate.dataForTweet options:NSJSONWritingPrettyPrinted error:&error];
+
+NSURL *url = [NSURL URLWithString:@"http://waystation-api.herokuapp.com/sightings"];
+NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] initWithURL:url] autorelease];
+[request setHTTPMethod:@"POST"];
+[request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+[request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+[request setValue:[NSString stringWithFormat:@"%d", [jsonPayload length]] forHTTPHeaderField:@"Content-Length"];
+[request setHTTPBody: jsonPayload];
+self.myConnection = [NSURLConnection connectionWithRequest:request delegate:self];
+
+}
+
+- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [self.myData appendData:data];
+    NSLog(@"Recieved Data");
+}
+
+- (void) connection: (NSURLConnection *) connection didReceiveResponse:(NSURLResponse *)response {
+    if ([response isKindOfClass:[NSHTTPURLResponse class]])
+    {
+        NSLog(@"Got here");
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*) response;
+        int code = [httpResponse statusCode];
+        NSLog(@"%d",code);
+        //If you need the response, you can use it here
+    }
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    //[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(finishLoading) userInfo:nil repeats:NO];
+    NSLog(@"Responses Finished");
+    //NSLog(self.myData);
 }
 
 - (void)displayText:(NSString *)text {

@@ -18,7 +18,6 @@
 		AC8DB75A1722FBB400943B9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7591722FBB400943B9A /* Default-568h@2x.png */; };
 		AC8DB7611722FBCD00943B9A /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7601722FBCD00943B9A /* nav_menu_icon@2x.png */; };
 		AC8DB7651722FC0B00943B9A /* SAWWaystationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7631722FC0B00943B9A /* SAWWaystationViewController.m */; };
-		AC8DB7661722FC0B00943B9A /* SAWWaystationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7641722FC0B00943B9A /* SAWWaystationViewController.xib */; };
 		AC8DB7761722FCE700943B9A /* greetings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7681722FCE700943B9A /* greetings@2x.png */; };
 		AC8DB7771722FCE700943B9A /* gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7691722FCE700943B9A /* gradient@2x.png */; };
 		AC8DB7781722FCE700943B9A /* icon_ISS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB76A1722FCE700943B9A /* icon_ISS@2x.png */; };
@@ -48,6 +47,8 @@
 		AC8DB7A2172305A000943B9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7A1172305A000943B9A /* Default-568h@2x.png */; };
 		AC8DB7A417231B8F00943B9A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7A317231B8F00943B9A /* MapKit.framework */; };
 		AC8DB7A617231CA900943B9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7A517231CA900943B9A /* CoreLocation.framework */; };
+		AC8DB7AC1723459100943B9A /* SAWSineWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7AB1723459100943B9A /* SAWSineWaveView.m */; };
+		AC8DB7AE1723470000943B9A /* SAWWaystationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7AD172346FF00943B9A /* SAWWaystationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +68,6 @@
 		AC8DB7601722FBCD00943B9A /* nav_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_menu_icon@2x.png"; sourceTree = "<group>"; };
 		AC8DB7621722FC0B00943B9A /* SAWWaystationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWWaystationViewController.h; sourceTree = "<group>"; };
 		AC8DB7631722FC0B00943B9A /* SAWWaystationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWWaystationViewController.m; sourceTree = "<group>"; };
-		AC8DB7641722FC0B00943B9A /* SAWWaystationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWWaystationViewController.xib; sourceTree = "<group>"; };
 		AC8DB7681722FCE700943B9A /* greetings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greetings@2x.png"; sourceTree = "<group>"; };
 		AC8DB7691722FCE700943B9A /* gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient@2x.png"; sourceTree = "<group>"; };
 		AC8DB76A1722FCE700943B9A /* icon_ISS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ISS@2x.png"; sourceTree = "<group>"; };
@@ -102,6 +102,9 @@
 		AC8DB7A1172305A000943B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		AC8DB7A317231B8F00943B9A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AC8DB7A517231CA900943B9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AC8DB7AA1723459100943B9A /* SAWSineWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAWSineWaveView.h; path = ../SAWSineWaveView.h; sourceTree = "<group>"; };
+		AC8DB7AB1723459100943B9A /* SAWSineWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAWSineWaveView.m; path = ../SAWSineWaveView.m; sourceTree = "<group>"; };
+		AC8DB7AD172346FF00943B9A /* SAWWaystationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWWaystationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +167,9 @@
 				AC8DB7531722FBB400943B9A /* SAWAppDelegate.m */,
 				AC8DB7621722FC0B00943B9A /* SAWWaystationViewController.h */,
 				AC8DB7631722FC0B00943B9A /* SAWWaystationViewController.m */,
-				AC8DB7641722FC0B00943B9A /* SAWWaystationViewController.xib */,
+				AC8DB7AD172346FF00943B9A /* SAWWaystationViewController.xib */,
+				AC8DB7AA1723459100943B9A /* SAWSineWaveView.h */,
+				AC8DB7AB1723459100943B9A /* SAWSineWaveView.m */,
 				AC8DB7601722FBCD00943B9A /* nav_menu_icon@2x.png */,
 				AC8DB7861722FD0000943B9A /* PhotoViewController.h */,
 				AC8DB7871722FD0000943B9A /* PhotoViewController.m */,
@@ -278,7 +283,6 @@
 				AC8DB7581722FBB400943B9A /* Default@2x.png in Resources */,
 				AC8DB75A1722FBB400943B9A /* Default-568h@2x.png in Resources */,
 				AC8DB7611722FBCD00943B9A /* nav_menu_icon@2x.png in Resources */,
-				AC8DB7661722FC0B00943B9A /* SAWWaystationViewController.xib in Resources */,
 				AC8DB7761722FCE700943B9A /* greetings@2x.png in Resources */,
 				AC8DB7771722FCE700943B9A /* gradient@2x.png in Resources */,
 				AC8DB7781722FCE700943B9A /* icon_ISS@2x.png in Resources */,
@@ -297,6 +301,7 @@
 				AC8DB78D1722FD0000943B9A /* PhotoViewController.xib in Resources */,
 				AC8DB78F1722FD0000943B9A /* OverlayViewController.xib in Resources */,
 				AC8DB7A2172305A000943B9A /* Default-568h@2x.png in Resources */,
+				AC8DB7AE1723470000943B9A /* SAWWaystationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +320,7 @@
 				AC8DB7981723003300943B9A /* DDMenuController.m in Sources */,
 				AC8DB79D172300A500943B9A /* RightController.m in Sources */,
 				AC8DB79E172300A500943B9A /* LeftController.m in Sources */,
+				AC8DB7AC1723459100943B9A /* SAWSineWaveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
