@@ -46,6 +46,8 @@
 		AC8DB79E172300A500943B9A /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB79C172300A400943B9A /* LeftController.m */; };
 		AC8DB7A01723013800943B9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB79F1723013800943B9A /* QuartzCore.framework */; };
 		AC8DB7A2172305A000943B9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7A1172305A000943B9A /* Default-568h@2x.png */; };
+		AC8DB7A417231B8F00943B9A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7A317231B8F00943B9A /* MapKit.framework */; };
+		AC8DB7A617231CA900943B9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7A517231CA900943B9A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		AC8DB79C172300A400943B9A /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
 		AC8DB79F1723013800943B9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AC8DB7A1172305A000943B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AC8DB7A317231B8F00943B9A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AC8DB7A517231CA900943B9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8DB7A617231CA900943B9A /* CoreLocation.framework in Frameworks */,
+				AC8DB7A417231B8F00943B9A /* MapKit.framework in Frameworks */,
 				AC8DB7A01723013800943B9A /* QuartzCore.framework in Frameworks */,
 				AC8DB7951722FEB100943B9A /* AudioToolbox.framework in Frameworks */,
 				AC8DB7931722FEAA00943B9A /* Twitter.framework in Frameworks */,
@@ -121,6 +127,8 @@
 		AC8DB7371722FBB300943B9A = {
 			isa = PBXGroup;
 			children = (
+				AC8DB7A517231CA900943B9A /* CoreLocation.framework */,
+				AC8DB7A317231B8F00943B9A /* MapKit.framework */,
 				AC8DB7A1172305A000943B9A /* Default-568h@2x.png */,
 				AC8DB79F1723013800943B9A /* QuartzCore.framework */,
 				AC8DB7941722FEB100943B9A /* AudioToolbox.framework */,

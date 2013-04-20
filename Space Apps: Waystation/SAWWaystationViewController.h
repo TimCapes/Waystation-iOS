@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "DDMenuController.h"
+#import <MapKit/MapKit.h>
+
 @interface SAWWaystationViewController : UIViewController
 @property(nonatomic, retain) DDMenuController *root;
+@property (retain, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

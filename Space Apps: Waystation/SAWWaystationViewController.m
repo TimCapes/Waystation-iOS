@@ -8,8 +8,10 @@
 
 #import "SAWWaystationViewController.h"
 
-@interface SAWWaystationViewController ()
 
+@interface SAWWaystationViewController ()
+@property (nonatomic, strong) CLGeocoder *geocoder;
+@property (nonatomic, strong) MKPlacemark *placemark;
 @end
 
 @implementation SAWWaystationViewController
@@ -32,6 +34,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.mapView.showsUserLocation = YES;
+     self.mapView.mapType = MKMapTypeSatellite;
+    self.geocoder = [[CLGeocoder alloc] init];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -40,5 +45,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)dealloc {
+    [_mapView release];
+    [super dealloc];
+}
+
 
 @end
