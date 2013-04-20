@@ -13,5 +13,9 @@
 @interface SAWWaystationViewController : UIViewController
 @property(nonatomic, retain) DDMenuController *root;
 @property (retain, nonatomic) IBOutlet MKMapView *mapView;
+@property (retain, nonatomic) IBOutlet UIImageView *greetings;
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, strong) MKPlacemark *placemark;
+
 
 @end

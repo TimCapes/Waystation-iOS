@@ -99,7 +99,7 @@
 		AC8DB79B172300A300943B9A /* LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
 		AC8DB79C172300A400943B9A /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
 		AC8DB79F1723013800943B9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		AC8DB7A1172305A000943B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AC8DB7A1172305A000943B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		AC8DB7A317231B8F00943B9A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AC8DB7A517231CA900943B9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -129,7 +129,6 @@
 			children = (
 				AC8DB7A517231CA900943B9A /* CoreLocation.framework */,
 				AC8DB7A317231B8F00943B9A /* MapKit.framework */,
-				AC8DB7A1172305A000943B9A /* Default-568h@2x.png */,
 				AC8DB79F1723013800943B9A /* QuartzCore.framework */,
 				AC8DB7941722FEB100943B9A /* AudioToolbox.framework */,
 				AC8DB7921722FEAA00943B9A /* Twitter.framework */,
@@ -179,6 +178,7 @@
 				AC8DB79A172300A300943B9A /* RightController.m */,
 				AC8DB79B172300A300943B9A /* LeftController.h */,
 				AC8DB79C172300A400943B9A /* LeftController.m */,
+				AC8DB7A1172305A000943B9A /* Default-568h@2x.png */,
 				AC8DB74A1722FBB300943B9A /* Supporting Files */,
 			);
 			path = "Space Apps: Waystation";

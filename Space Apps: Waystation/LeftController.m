@@ -35,10 +35,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    pan.delegate = (id<UIGestureRecognizerDelegate>)self;
-    [self.view addGestureRecognizer:pan];
-    _pan = pan;
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+//    pan.delegate = (id<UIGestureRecognizerDelegate>)self;
+//    [self.view addGestureRecognizer:pan];
+//    _pan = pan;
 
    
     if (!_tableView) {
