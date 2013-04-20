@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC8DB7441722FBB300943B9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7431722FBB300943B9A /* UIKit.framework */; };
+		AC8DB7461722FBB300943B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7451722FBB300943B9A /* Foundation.framework */; };
+		AC8DB7481722FBB300943B9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7471722FBB300943B9A /* CoreGraphics.framework */; };
+		AC8DB74E1722FBB300943B9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB74C1722FBB300943B9A /* InfoPlist.strings */; };
+		AC8DB7501722FBB300943B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB74F1722FBB300943B9A /* main.m */; };
+		AC8DB7541722FBB400943B9A /* SAWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7531722FBB400943B9A /* SAWAppDelegate.m */; };
+		AC8DB7561722FBB400943B9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7551722FBB400943B9A /* Default.png */; };
+		AC8DB7581722FBB400943B9A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7571722FBB400943B9A /* Default@2x.png */; };
+		AC8DB75A1722FBB400943B9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7591722FBB400943B9A /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC8DB7401722FBB300943B9A /* Space Apps: Waystation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Apps: Waystation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8DB7431722FBB300943B9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC8DB7451722FBB300943B9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC8DB7471722FBB300943B9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AC8DB74B1722FBB300943B9A /* Space Apps: Waystation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space Apps: Waystation-Info.plist"; sourceTree = "<group>"; };
+		AC8DB74D1722FBB300943B9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC8DB74F1722FBB300943B9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC8DB7511722FBB400943B9A /* Space Apps: Waystation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Space Apps: Waystation-Prefix.pch"; sourceTree = "<group>"; };
+		AC8DB7521722FBB400943B9A /* SAWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAWAppDelegate.h; sourceTree = "<group>"; };
+		AC8DB7531722FBB400943B9A /* SAWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAWAppDelegate.m; sourceTree = "<group>"; };
+		AC8DB7551722FBB400943B9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AC8DB7571722FBB400943B9A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AC8DB7591722FBB400943B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC8DB73D1722FBB300943B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8DB7441722FBB300943B9A /* UIKit.framework in Frameworks */,
+				AC8DB7461722FBB300943B9A /* Foundation.framework in Frameworks */,
+				AC8DB7481722FBB300943B9A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC8DB7371722FBB300943B9A = {
+			isa = PBXGroup;
+			children = (
+				AC8DB7491722FBB300943B9A /* Space Apps: Waystation */,
+				AC8DB7421722FBB300943B9A /* Frameworks */,
+				AC8DB7411722FBB300943B9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC8DB7411722FBB300943B9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB7401722FBB300943B9A /* Space Apps: Waystation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC8DB7421722FBB300943B9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB7431722FBB300943B9A /* UIKit.framework */,
+				AC8DB7451722FBB300943B9A /* Foundation.framework */,
+				AC8DB7471722FBB300943B9A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC8DB7491722FBB300943B9A /* Space Apps: Waystation */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB7521722FBB400943B9A /* SAWAppDelegate.h */,
+				AC8DB7531722FBB400943B9A /* SAWAppDelegate.m */,
+				AC8DB74A1722FBB300943B9A /* Supporting Files */,
+			);
+			path = "Space Apps: Waystation";
+			sourceTree = "<group>";
+		};
+		AC8DB74A1722FBB300943B9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB74B1722FBB300943B9A /* Space Apps: Waystation-Info.plist */,
+				AC8DB74C1722FBB300943B9A /* InfoPlist.strings */,
+				AC8DB74F1722FBB300943B9A /* main.m */,
+				AC8DB7511722FBB400943B9A /* Space Apps: Waystation-Prefix.pch */,
+				AC8DB7551722FBB400943B9A /* Default.png */,
+				AC8DB7571722FBB400943B9A /* Default@2x.png */,
+				AC8DB7591722FBB400943B9A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC8DB73F1722FBB300943B9A /* Space Apps: Waystation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8DB75D1722FBB400943B9A /* Build configuration list for PBXNativeTarget "Space Apps: Waystation" */;
+			buildPhases = (
+				AC8DB73C1722FBB300943B9A /* Sources */,
+				AC8DB73D1722FBB300943B9A /* Frameworks */,
+				AC8DB73E1722FBB300943B9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Apps: Waystation";
+			productName = "Space Apps: Waystation";
+			productReference = AC8DB7401722FBB300943B9A /* Space Apps: Waystation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC8DB7381722FBB300943B9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SAW;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = SpaceApps;
+			};
+			buildConfigurationList = AC8DB73B1722FBB300943B9A /* Build configuration list for PBXProject "Space Apps: Waystation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC8DB7371722FBB300943B9A;
+			productRefGroup = AC8DB7411722FBB300943B9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC8DB73F1722FBB300943B9A /* Space Apps: Waystation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC8DB73E1722FBB300943B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8DB74E1722FBB300943B9A /* InfoPlist.strings in Resources */,
+				AC8DB7561722FBB400943B9A /* Default.png in Resources */,
+				AC8DB7581722FBB400943B9A /* Default@2x.png in Resources */,
+				AC8DB75A1722FBB400943B9A /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC8DB73C1722FBB300943B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8DB7501722FBB300943B9A /* main.m in Sources */,
+				AC8DB7541722FBB400943B9A /* SAWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC8DB74C1722FBB300943B9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8DB74D1722FBB300943B9A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC8DB75B1722FBB400943B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC8DB75C1722FBB400943B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC8DB75E1722FBB400943B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Apps: Waystation/Space Apps: Waystation-Prefix.pch";
+				INFOPLIST_FILE = "Space Apps: Waystation/Space Apps: Waystation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC8DB75F1722FBB400943B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Apps: Waystation/Space Apps: Waystation-Prefix.pch";
+				INFOPLIST_FILE = "Space Apps: Waystation/Space Apps: Waystation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC8DB73B1722FBB300943B9A /* Build configuration list for PBXProject "Space Apps: Waystation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8DB75B1722FBB400943B9A /* Debug */,
+				AC8DB75C1722FBB400943B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8DB75D1722FBB400943B9A /* Build configuration list for PBXNativeTarget "Space Apps: Waystation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8DB75E1722FBB400943B9A /* Debug */,
+				AC8DB75F1722FBB400943B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC8DB7381722FBB300943B9A /* Project object */;
+}
