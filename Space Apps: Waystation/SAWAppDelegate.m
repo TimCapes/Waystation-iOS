@@ -7,6 +7,9 @@
 //
 
 #import "SAWAppDelegate.h"
+#import "SAWWaystationViewController.h"
+#import "LeftController.h"
+#import "RightController.h"
 
 @implementation SAWAppDelegate
 
@@ -18,11 +21,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]autorelease];
+    
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    SAWWaystationViewController *mainController = [[[SAWWaystationViewController alloc] initWithNibName:@"SAWWaystationViewController" bundle:nil] autorelease];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
+    navController.navigationBar.hidden = YES;
+    //    [navController.navigationBar setShadowImage:[[UIImage alloc] init]];
+    //    navController.navigationBar.translucent = YES;
+    //    navController.navigationBar.backgroundColor = [UIColor clearColor];
+    //    navController.navigationBar.   //navController.navigationBar.i
+    DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];
+    mainController.root = rootController;
+    //DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:mainController];
+    _menuController = rootController;
+    
+    LeftController *leftController = [[LeftController alloc] init];
+    leftController.root = rootController;
+    rootController.leftViewController = leftController;
+    
+    RightController *rightController = [[RightController alloc] init];
+    rightController.root = rootController;
+    rootController.rightViewController = rightController;
+    
+    self.window.rootViewController = rootController;
+    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:NO];
+    //self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+//    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+//    // Override point for customization after application launch.
+//
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
+//    navController.navigationBar.hidden = YES;
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:NO];
+//    //self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = mainController;
+//    [self.window makeKeyAndVisible];
+//    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

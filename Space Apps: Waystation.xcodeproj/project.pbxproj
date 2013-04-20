@@ -16,6 +16,35 @@
 		AC8DB7561722FBB400943B9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7551722FBB400943B9A /* Default.png */; };
 		AC8DB7581722FBB400943B9A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7571722FBB400943B9A /* Default@2x.png */; };
 		AC8DB75A1722FBB400943B9A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7591722FBB400943B9A /* Default-568h@2x.png */; };
+		AC8DB7611722FBCD00943B9A /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7601722FBCD00943B9A /* nav_menu_icon@2x.png */; };
+		AC8DB7651722FC0B00943B9A /* SAWWaystationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7631722FC0B00943B9A /* SAWWaystationViewController.m */; };
+		AC8DB7661722FC0B00943B9A /* SAWWaystationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7641722FC0B00943B9A /* SAWWaystationViewController.xib */; };
+		AC8DB7761722FCE700943B9A /* greetings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7681722FCE700943B9A /* greetings@2x.png */; };
+		AC8DB7771722FCE700943B9A /* gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7691722FCE700943B9A /* gradient@2x.png */; };
+		AC8DB7781722FCE700943B9A /* icon_ISS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB76A1722FCE700943B9A /* icon_ISS@2x.png */; };
+		AC8DB7791722FCE700943B9A /* icon_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB76B1722FCE700943B9A /* icon_menu@2x.png */; };
+		AC8DB77A1722FCE700943B9A /* icon_spot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB76C1722FCE700943B9A /* icon_spot@2x.png */; };
+		AC8DB77B1722FCE700943B9A /* pic1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB76D1722FCE700943B9A /* pic1@2x.png */; };
+		AC8DB77C1722FCE700943B9A /* pic2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB76E1722FCE700943B9A /* pic2@2x.png */; };
+		AC8DB77D1722FCE700943B9A /* pic3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB76F1722FCE700943B9A /* pic3@2x.png */; };
+		AC8DB77E1722FCE700943B9A /* pic4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7701722FCE700943B9A /* pic4@2x.png */; };
+		AC8DB77F1722FCE700943B9A /* pic5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7711722FCE700943B9A /* pic5@2x.png */; };
+		AC8DB7801722FCE700943B9A /* pic6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7721722FCE700943B9A /* pic6@2x.png */; };
+		AC8DB7811722FCE700943B9A /* pic7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7731722FCE700943B9A /* pic7@2x.png */; };
+		AC8DB7821722FCE700943B9A /* pic8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7741722FCE700943B9A /* pic8@2x.png */; };
+		AC8DB7831722FCE700943B9A /* title_waystation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7751722FCE700943B9A /* title_waystation@2x.png */; };
+		AC8DB7851722FCF100943B9A /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7841722FCF100943B9A /* tick.aiff */; };
+		AC8DB78C1722FD0000943B9A /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7871722FD0000943B9A /* PhotoViewController.m */; };
+		AC8DB78D1722FD0000943B9A /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7881722FD0000943B9A /* PhotoViewController.xib */; };
+		AC8DB78E1722FD0000943B9A /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB78A1722FD0000943B9A /* OverlayViewController.m */; };
+		AC8DB78F1722FD0000943B9A /* OverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB78B1722FD0000943B9A /* OverlayViewController.xib */; };
+		AC8DB7911722FEA400943B9A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7901722FEA400943B9A /* Accounts.framework */; };
+		AC8DB7931722FEAA00943B9A /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7921722FEAA00943B9A /* Twitter.framework */; };
+		AC8DB7951722FEB100943B9A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7941722FEB100943B9A /* AudioToolbox.framework */; };
+		AC8DB7981723003300943B9A /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7971723003300943B9A /* DDMenuController.m */; };
+		AC8DB79D172300A500943B9A /* RightController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB79A172300A300943B9A /* RightController.m */; };
+		AC8DB79E172300A500943B9A /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB79C172300A400943B9A /* LeftController.m */; };
+		AC8DB7A01723013800943B9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB79F1723013800943B9A /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +61,41 @@
 		AC8DB7551722FBB400943B9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AC8DB7571722FBB400943B9A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AC8DB7591722FBB400943B9A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AC8DB7601722FBCD00943B9A /* nav_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_menu_icon@2x.png"; sourceTree = "<group>"; };
+		AC8DB7621722FC0B00943B9A /* SAWWaystationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWWaystationViewController.h; sourceTree = "<group>"; };
+		AC8DB7631722FC0B00943B9A /* SAWWaystationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWWaystationViewController.m; sourceTree = "<group>"; };
+		AC8DB7641722FC0B00943B9A /* SAWWaystationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWWaystationViewController.xib; sourceTree = "<group>"; };
+		AC8DB7681722FCE700943B9A /* greetings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greetings@2x.png"; sourceTree = "<group>"; };
+		AC8DB7691722FCE700943B9A /* gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradient@2x.png"; sourceTree = "<group>"; };
+		AC8DB76A1722FCE700943B9A /* icon_ISS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ISS@2x.png"; sourceTree = "<group>"; };
+		AC8DB76B1722FCE700943B9A /* icon_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_menu@2x.png"; sourceTree = "<group>"; };
+		AC8DB76C1722FCE700943B9A /* icon_spot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_spot@2x.png"; sourceTree = "<group>"; };
+		AC8DB76D1722FCE700943B9A /* pic1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic1@2x.png"; sourceTree = "<group>"; };
+		AC8DB76E1722FCE700943B9A /* pic2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic2@2x.png"; sourceTree = "<group>"; };
+		AC8DB76F1722FCE700943B9A /* pic3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic3@2x.png"; sourceTree = "<group>"; };
+		AC8DB7701722FCE700943B9A /* pic4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic4@2x.png"; sourceTree = "<group>"; };
+		AC8DB7711722FCE700943B9A /* pic5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic5@2x.png"; sourceTree = "<group>"; };
+		AC8DB7721722FCE700943B9A /* pic6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic6@2x.png"; sourceTree = "<group>"; };
+		AC8DB7731722FCE700943B9A /* pic7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic7@2x.png"; sourceTree = "<group>"; };
+		AC8DB7741722FCE700943B9A /* pic8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pic8@2x.png"; sourceTree = "<group>"; };
+		AC8DB7751722FCE700943B9A /* title_waystation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title_waystation@2x.png"; sourceTree = "<group>"; };
+		AC8DB7841722FCF100943B9A /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = tick.aiff; path = waystation_cutups/tick.aiff; sourceTree = "<group>"; };
+		AC8DB7861722FD0000943B9A /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		AC8DB7871722FD0000943B9A /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		AC8DB7881722FD0000943B9A /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		AC8DB7891722FD0000943B9A /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		AC8DB78A1722FD0000943B9A /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
+		AC8DB78B1722FD0000943B9A /* OverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayViewController.xib; sourceTree = "<group>"; };
+		AC8DB7901722FEA400943B9A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		AC8DB7921722FEAA00943B9A /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		AC8DB7941722FEB100943B9A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AC8DB7961723003200943B9A /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
+		AC8DB7971723003300943B9A /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
+		AC8DB799172300A200943B9A /* RightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightController.h; sourceTree = "<group>"; };
+		AC8DB79A172300A300943B9A /* RightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightController.m; sourceTree = "<group>"; };
+		AC8DB79B172300A300943B9A /* LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
+		AC8DB79C172300A400943B9A /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
+		AC8DB79F1723013800943B9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +103,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8DB7A01723013800943B9A /* QuartzCore.framework in Frameworks */,
+				AC8DB7951722FEB100943B9A /* AudioToolbox.framework in Frameworks */,
+				AC8DB7931722FEAA00943B9A /* Twitter.framework in Frameworks */,
+				AC8DB7911722FEA400943B9A /* Accounts.framework in Frameworks */,
 				AC8DB7441722FBB300943B9A /* UIKit.framework in Frameworks */,
 				AC8DB7461722FBB300943B9A /* Foundation.framework in Frameworks */,
 				AC8DB7481722FBB300943B9A /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +119,10 @@
 		AC8DB7371722FBB300943B9A = {
 			isa = PBXGroup;
 			children = (
+				AC8DB79F1723013800943B9A /* QuartzCore.framework */,
+				AC8DB7941722FEB100943B9A /* AudioToolbox.framework */,
+				AC8DB7921722FEAA00943B9A /* Twitter.framework */,
+				AC8DB7901722FEA400943B9A /* Accounts.framework */,
 				AC8DB7491722FBB300943B9A /* Space Apps: Waystation */,
 				AC8DB7421722FBB300943B9A /* Frameworks */,
 				AC8DB7411722FBB300943B9A /* Products */,
@@ -80,6 +152,22 @@
 			children = (
 				AC8DB7521722FBB400943B9A /* SAWAppDelegate.h */,
 				AC8DB7531722FBB400943B9A /* SAWAppDelegate.m */,
+				AC8DB7621722FC0B00943B9A /* SAWWaystationViewController.h */,
+				AC8DB7631722FC0B00943B9A /* SAWWaystationViewController.m */,
+				AC8DB7641722FC0B00943B9A /* SAWWaystationViewController.xib */,
+				AC8DB7601722FBCD00943B9A /* nav_menu_icon@2x.png */,
+				AC8DB7861722FD0000943B9A /* PhotoViewController.h */,
+				AC8DB7871722FD0000943B9A /* PhotoViewController.m */,
+				AC8DB7881722FD0000943B9A /* PhotoViewController.xib */,
+				AC8DB7891722FD0000943B9A /* OverlayViewController.h */,
+				AC8DB78A1722FD0000943B9A /* OverlayViewController.m */,
+				AC8DB78B1722FD0000943B9A /* OverlayViewController.xib */,
+				AC8DB7961723003200943B9A /* DDMenuController.h */,
+				AC8DB7971723003300943B9A /* DDMenuController.m */,
+				AC8DB799172300A200943B9A /* RightController.h */,
+				AC8DB79A172300A300943B9A /* RightController.m */,
+				AC8DB79B172300A300943B9A /* LeftController.h */,
+				AC8DB79C172300A400943B9A /* LeftController.m */,
 				AC8DB74A1722FBB300943B9A /* Supporting Files */,
 			);
 			path = "Space Apps: Waystation";
@@ -88,6 +176,8 @@
 		AC8DB74A1722FBB300943B9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC8DB7841722FCF100943B9A /* tick.aiff */,
+				AC8DB7671722FCE700943B9A /* waystation_cutups */,
 				AC8DB74B1722FBB300943B9A /* Space Apps: Waystation-Info.plist */,
 				AC8DB74C1722FBB300943B9A /* InfoPlist.strings */,
 				AC8DB74F1722FBB300943B9A /* main.m */,
@@ -97,6 +187,27 @@
 				AC8DB7591722FBB400943B9A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC8DB7671722FCE700943B9A /* waystation_cutups */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DB7681722FCE700943B9A /* greetings@2x.png */,
+				AC8DB7691722FCE700943B9A /* gradient@2x.png */,
+				AC8DB76A1722FCE700943B9A /* icon_ISS@2x.png */,
+				AC8DB76B1722FCE700943B9A /* icon_menu@2x.png */,
+				AC8DB76C1722FCE700943B9A /* icon_spot@2x.png */,
+				AC8DB76D1722FCE700943B9A /* pic1@2x.png */,
+				AC8DB76E1722FCE700943B9A /* pic2@2x.png */,
+				AC8DB76F1722FCE700943B9A /* pic3@2x.png */,
+				AC8DB7701722FCE700943B9A /* pic4@2x.png */,
+				AC8DB7711722FCE700943B9A /* pic5@2x.png */,
+				AC8DB7721722FCE700943B9A /* pic6@2x.png */,
+				AC8DB7731722FCE700943B9A /* pic7@2x.png */,
+				AC8DB7741722FCE700943B9A /* pic8@2x.png */,
+				AC8DB7751722FCE700943B9A /* title_waystation@2x.png */,
+			);
+			path = waystation_cutups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +266,25 @@
 				AC8DB7561722FBB400943B9A /* Default.png in Resources */,
 				AC8DB7581722FBB400943B9A /* Default@2x.png in Resources */,
 				AC8DB75A1722FBB400943B9A /* Default-568h@2x.png in Resources */,
+				AC8DB7611722FBCD00943B9A /* nav_menu_icon@2x.png in Resources */,
+				AC8DB7661722FC0B00943B9A /* SAWWaystationViewController.xib in Resources */,
+				AC8DB7761722FCE700943B9A /* greetings@2x.png in Resources */,
+				AC8DB7771722FCE700943B9A /* gradient@2x.png in Resources */,
+				AC8DB7781722FCE700943B9A /* icon_ISS@2x.png in Resources */,
+				AC8DB7791722FCE700943B9A /* icon_menu@2x.png in Resources */,
+				AC8DB77A1722FCE700943B9A /* icon_spot@2x.png in Resources */,
+				AC8DB77B1722FCE700943B9A /* pic1@2x.png in Resources */,
+				AC8DB77C1722FCE700943B9A /* pic2@2x.png in Resources */,
+				AC8DB77D1722FCE700943B9A /* pic3@2x.png in Resources */,
+				AC8DB77E1722FCE700943B9A /* pic4@2x.png in Resources */,
+				AC8DB77F1722FCE700943B9A /* pic5@2x.png in Resources */,
+				AC8DB7801722FCE700943B9A /* pic6@2x.png in Resources */,
+				AC8DB7811722FCE700943B9A /* pic7@2x.png in Resources */,
+				AC8DB7821722FCE700943B9A /* pic8@2x.png in Resources */,
+				AC8DB7831722FCE700943B9A /* title_waystation@2x.png in Resources */,
+				AC8DB7851722FCF100943B9A /* tick.aiff in Resources */,
+				AC8DB78D1722FD0000943B9A /* PhotoViewController.xib in Resources */,
+				AC8DB78F1722FD0000943B9A /* OverlayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +297,12 @@
 			files = (
 				AC8DB7501722FBB300943B9A /* main.m in Sources */,
 				AC8DB7541722FBB400943B9A /* SAWAppDelegate.m in Sources */,
+				AC8DB7651722FC0B00943B9A /* SAWWaystationViewController.m in Sources */,
+				AC8DB78C1722FD0000943B9A /* PhotoViewController.m in Sources */,
+				AC8DB78E1722FD0000943B9A /* OverlayViewController.m in Sources */,
+				AC8DB7981723003300943B9A /* DDMenuController.m in Sources */,
+				AC8DB79D172300A500943B9A /* RightController.m in Sources */,
+				AC8DB79E172300A500943B9A /* LeftController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
