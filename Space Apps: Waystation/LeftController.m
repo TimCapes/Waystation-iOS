@@ -52,7 +52,7 @@
         tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         tableView.delegate = (id<UITableViewDelegate>)self;
         tableView.dataSource = (id<UITableViewDataSource>)self;
-        tableView.scrollEnabled=NO;
+        tableView.scrollEnabled=YES;
         [self.view addSubview:tableView];
         self.tableView = tableView;
         self.tableView.separatorColor  = [UIColor clearColor];
@@ -85,11 +85,14 @@
     return cell;
 }
 
-- (NSString*)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
+    return 568;
+}
+- (NSString *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
     return @"";
 }
 
-- (CGFloat)tableView:tableView heightForHeaderInSection:(NSInteger)section {
+- (CGFloat) tableView:(UITableView *) tableView heightForHeaderInSection:(NSInteger)section {
     return 0;
 }
 

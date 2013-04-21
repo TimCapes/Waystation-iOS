@@ -26,4 +26,12 @@
     // Configure the view for the selected state
 }
 
+- (void)dealloc {
+    [_backgroundImage release];
+    [_homeButton release];
+    [_schedule release];
+    [_notifcations release];
+    [_settings release];
+    [super dealloc];
+}
 @end

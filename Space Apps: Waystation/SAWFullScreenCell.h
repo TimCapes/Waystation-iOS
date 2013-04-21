@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SAWFullScreenCell : UITableViewCell
+@property (retain, nonatomic) IBOutlet UIButton *settings;
+@property (retain, nonatomic) IBOutlet UIButton *homeButton;
+@property (retain, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (retain, nonatomic) IBOutlet UIButton *schedule;
+@property (retain, nonatomic) IBOutlet UIButton *notifcations;
 
 @end
