@@ -89,7 +89,11 @@
 }
 
 -(IBAction) pushSchedule  {
+    NSLog(@"push reached");
+    //wrong navigationController
+    SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
     [self.navigationController pushViewController:[[[SAWTimingViewController alloc]initWithNibName:@"SAWTimingViewController" bundle:nil]autorelease] animated:YES];
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {

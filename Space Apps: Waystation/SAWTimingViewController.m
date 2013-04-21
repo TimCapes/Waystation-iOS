@@ -25,15 +25,12 @@
     return self;
 }
 - (IBAction)spotTheSpaceStation:(id)sender {
-    [self.navigationController pushViewController:[[[SAWPhotoViewController alloc]initWithNibName:@"SAWPhotoViewController" bundle:nil]autorelease] animated:YES];
+//    [self.navigationController pushViewController:[[[SAWPhotoViewController alloc]initWithNibName:@"SAWPhotoViewController" bundle:nil]autorelease] animated:YES];
 }
 - (IBAction)left:(id)sender {
-    UINavigationController *navController = self.navigationController;
-    [[navController retain]autorelease];
-    [self.navigationController popToRootViewControllerAnimated:NO];
-    SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
-    //hack reopen left drawer
-    //appDelegate.rootController.
+//    UINavigationController *navController = self.navigationController;
+//    [[navController retain]autorelease];
+//    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 - (void)viewDidLoad
