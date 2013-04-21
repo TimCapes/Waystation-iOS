@@ -10,6 +10,7 @@
 #import "SAWWaystationViewController.h"
 #import "DDMenuController.h"
 #import "SAWAppDelegate.h"
+#import "SAWFullScreenCell.h"
 
 @implementation LeftController
 
@@ -45,7 +46,7 @@
         
         CGRect frame = self.view.bounds;
         //frame.origin.x = 0.0f;
-        frame.size.width -= 80.0f;
+        frame.size.width -= 60.0f;
         
         UITableView *tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
         tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -54,7 +55,7 @@
         tableView.scrollEnabled=NO;
         [self.view addSubview:tableView];
         self.tableView = tableView;
-        
+        self.tableView.separatorColor  = [UIColor clearColor];
     }
 }
 
@@ -72,31 +73,25 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 1;
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"CellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    SAWFullScreenCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SAWFullScreenCell"];
+    if (!cell) {
+        NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWFullScreenCell" owner:self options:nil];
+        cell = [cellArray objectAtIndex: 0];
     }
-    
-    /* 
-     * Content in this cell should be inset the size of kMenuOverlayWidth
-     */
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell %i", indexPath.row];
-    
     return cell;
-    
 }
 
 - (NSString*)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Left Controller";
+    return @"";
 }
 
+- (CGFloat)tableView:tableView heightForHeaderInSection:(NSInteger)section {
+    return 0;
+}
 
 #pragma mark - UITableViewDelegate
 

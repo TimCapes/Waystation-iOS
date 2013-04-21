@@ -77,6 +77,9 @@
 		AC8DB7E917240B2100943B9A /* SAWPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */; };
 		AC8DB7EA17240B2100943B9A /* SAWPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */; };
 		AC8DB7EC172448D200943B9A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7EB172448D100943B9A /* Icon@2x.png */; };
+		AC8DB7EF1724601900943B9A /* SAWFullScreenCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7EE1724601600943B9A /* SAWFullScreenCell.m */; };
+		AC8DB7F11724602B00943B9A /* SAWFullScreenCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7F01724602800943B9A /* SAWFullScreenCell.xib */; };
+		AC8DB8821724632800943B9A /* leftMenuBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB8811724632600943B9A /* leftMenuBackground@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +165,10 @@
 		AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAWPhotoViewController.m; path = ../SAWPhotoViewController.m; sourceTree = "<group>"; };
 		AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SAWPhotoViewController.xib; path = ../SAWPhotoViewController.xib; sourceTree = "<group>"; };
 		AC8DB7EB172448D100943B9A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		AC8DB7ED1724601400943B9A /* SAWFullScreenCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWFullScreenCell.h; sourceTree = "<group>"; };
+		AC8DB7EE1724601600943B9A /* SAWFullScreenCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWFullScreenCell.m; sourceTree = "<group>"; };
+		AC8DB7F01724602800943B9A /* SAWFullScreenCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWFullScreenCell.xib; sourceTree = "<group>"; };
+		AC8DB8811724632600943B9A /* leftMenuBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftMenuBackground@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +248,9 @@
 				AC8DB79A172300A300943B9A /* RightController.m */,
 				AC8DB79B172300A300943B9A /* LeftController.h */,
 				AC8DB79C172300A400943B9A /* LeftController.m */,
+				AC8DB7ED1724601400943B9A /* SAWFullScreenCell.h */,
+				AC8DB7EE1724601600943B9A /* SAWFullScreenCell.m */,
+				AC8DB7F01724602800943B9A /* SAWFullScreenCell.xib */,
 				AC8DB7E617240B2100943B9A /* SAWPhotoViewController.h */,
 				AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */,
 				AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */,
@@ -253,6 +263,7 @@
 		AC8DB74A1722FBB300943B9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC8DB8811724632600943B9A /* leftMenuBackground@2x.png */,
 				AC8DB7C21723626D00943B9A /* waystation_cutups_capture */,
 				AC8DB7841722FCF100943B9A /* tick.aiff */,
 				AC8DB7671722FCE700943B9A /* waystation_cutups */,
@@ -431,6 +442,8 @@
 				AC8DB7E21723626D00943B9A /* textbox_name@2x.png in Resources */,
 				AC8DB7EA17240B2100943B9A /* SAWPhotoViewController.xib in Resources */,
 				AC8DB7EC172448D200943B9A /* Icon@2x.png in Resources */,
+				AC8DB7F11724602B00943B9A /* SAWFullScreenCell.xib in Resources */,
+				AC8DB8821724632800943B9A /* leftMenuBackground@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +464,7 @@
 				AC8DB79E172300A500943B9A /* LeftController.m in Sources */,
 				AC8DB7AC1723459100943B9A /* SAWSineWaveView.m in Sources */,
 				AC8DB7E917240B2100943B9A /* SAWPhotoViewController.m in Sources */,
+				AC8DB7EF1724601900943B9A /* SAWFullScreenCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
