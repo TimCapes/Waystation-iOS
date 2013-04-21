@@ -92,6 +92,7 @@ enum
 
         self.imagePickerController = [[[UIImagePickerController alloc] init] autorelease];
         self.imagePickerController.delegate = self;
+        //self.imagePickerController.cameraDevice = AVCaptureDevicePositionFront;
     }
     return self;
 }

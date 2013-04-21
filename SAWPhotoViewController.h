@@ -19,5 +19,7 @@
 @property (retain, nonatomic) IBOutlet UITextField *nameBox;
 @property (retain, nonatomic) IBOutlet UIButton *sendButton;
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
+@property(nonatomic, retain) NSURLConnection *myConnection;
+@property(nonatomic, retain) NSMutableData *myData;
 
 @end

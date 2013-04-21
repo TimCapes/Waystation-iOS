@@ -76,6 +76,7 @@
 		AC8DB7E21723626D00943B9A /* textbox_name@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7D21723626D00943B9A /* textbox_name@2x.png */; };
 		AC8DB7E917240B2100943B9A /* SAWPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */; };
 		AC8DB7EA17240B2100943B9A /* SAWPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */; };
+		AC8DB7EC172448D200943B9A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7EB172448D100943B9A /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +161,7 @@
 		AC8DB7E617240B2100943B9A /* SAWPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAWPhotoViewController.h; path = ../SAWPhotoViewController.h; sourceTree = "<group>"; };
 		AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAWPhotoViewController.m; path = ../SAWPhotoViewController.m; sourceTree = "<group>"; };
 		AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SAWPhotoViewController.xib; path = ../SAWPhotoViewController.xib; sourceTree = "<group>"; };
+		AC8DB7EB172448D100943B9A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		AC8DB7371722FBB300943B9A = {
 			isa = PBXGroup;
 			children = (
+				AC8DB7EB172448D100943B9A /* Icon@2x.png */,
 				AC8DB7A517231CA900943B9A /* CoreLocation.framework */,
 				AC8DB7A317231B8F00943B9A /* MapKit.framework */,
 				AC8DB79F1723013800943B9A /* QuartzCore.framework */,
@@ -427,6 +430,7 @@
 				AC8DB7E11723626D00943B9A /* textbox_name.png in Resources */,
 				AC8DB7E21723626D00943B9A /* textbox_name@2x.png in Resources */,
 				AC8DB7EA17240B2100943B9A /* SAWPhotoViewController.xib in Resources */,
+				AC8DB7EC172448D200943B9A /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

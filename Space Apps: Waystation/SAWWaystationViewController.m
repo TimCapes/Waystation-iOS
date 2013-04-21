@@ -44,13 +44,30 @@
     [self.view setBackgroundColor:[UIColor blackColor]];
     self.sineWave = [[[SAWSineWaveView alloc] initWithFrame:CGRectMake(0,0,320,338)]autorelease];
     self.sineWave.backgroundColor = [UIColor clearColor];
-    
-    
+    [self getSpaceStationPosition];
     [self.view addSubview:self.sineWave];
     [self.view sendSubviewToBack:self.sineWave];
     [self.view sendSubviewToBack:self.mapView];
 }
 
+- (void) getSpaceStationPosition {
+    self.myData = [[[NSMutableData alloc] initWithCapacity:0] autorelease];
+    NSMutableString *myURL = [NSMutableString stringWithFormat:@"http://waystation-api.herokuapp.com/iss/current_projection"];//.json?callback="];//"http://open-notify-api.herokuapp.com/iss-now.json"
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:myURL]
+                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+                                                       timeoutInterval:15];
+    [request setHTTPMethod: @"GET"];
+    self.myConnection = [NSURLConnection connectionWithRequest:request delegate:self];
+    if (self.myConnection) {
+        
+        NSLog(@"Connection established successfully");
+        
+    } else {
+        
+        NSLog(@"Connection failed.");
+        
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -64,11 +81,11 @@
     [super dealloc];
 }
 - (NSMutableDictionary *) addressForSending {
-    NSLog(self.placemark.locality);
-    NSLog(self.placemark.administrativeArea);
-    NSLog(self.placemark.country);
-    NSLog([NSMutableString stringWithFormat:@"Latitude: %f",self.mapView.userLocation.location.coordinate.latitude]);
-    NSLog([NSMutableString stringWithFormat:@"Longitude: %f",self.mapView.userLocation.location.coordinate.longitude]);
+//    NSLog(self.placemark.locality);
+//    NSLog(self.placemark.administrativeArea);
+//    NSLog(self.placemark.country);
+//    NSLog([NSMutableString stringWithFormat:@"Latitude: %f",self.mapView.userLocation.location.coordinate.latitude]);
+//    NSLog([NSMutableString stringWithFormat:@"Longitude: %f",self.mapView.userLocation.location.coordinate.longitude]);
     NSLog(@"%f",[[NSDate date] timeIntervalSince1970]);
     NSMutableString *date = [NSMutableString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970]];
     NSMutableString *latitude = [NSMutableString stringWithFormat:@"%f",self.mapView.userLocation.location.coordinate.latitude];
@@ -107,6 +124,35 @@
         SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
         appDelegate.dataForTweet = [self addressForSending];
     }];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    NSLog(@"Finished Loading");
+    NSError *error;
+    NSMutableDictionary *myDictionary =[NSJSONSerialization JSONObjectWithData:self.myData options: NSJSONReadingMutableContainers error:&error];
+    //NSLog(@"my error message: %@" ,error);
+    NSLog(@"my dictionary: %@", myDictionary);
+    [NSTimer scheduledTimerWithTimeInterval:20 target:self selector:@selector(getSpaceStationPosition) userInfo: nil repeats:NO];
+    NSMutableDictionary *myDataDictionary = [myDictionary objectForKey: @"data"];
+    NSMutableDictionary *coordinate = [myDataDictionary objectForKey:@"iss_position"];
+    NSLog(@"My Coordinate: %@", coordinate);
+    NSString *latitude = [coordinate objectForKey:@"latitude"];
+    NSString *longitude = [coordinate objectForKey:@"longitude"];
+    NSLog(@"My latitude %@", latitude);
+    NSLog(@"My longitude %@", longitude);
+   // self.mapView.centerCoordinate = CLLocationCoordinate2DMake(, );
+    [self centerMapOnSpaceStation];
+}
+- (void) centerMapOnSpaceStation {
+   
+}
+
+
+- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [self.myData appendData:data];
+    NSLog(@"Got Data");
+    
 }
 
 
