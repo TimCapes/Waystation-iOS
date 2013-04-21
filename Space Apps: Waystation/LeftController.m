@@ -11,6 +11,7 @@
 #import "DDMenuController.h"
 #import "SAWAppDelegate.h"
 #import "SAWFullScreenCell.h"
+#import "SAWTimingViewController.h"
 
 @implementation LeftController
 
@@ -82,7 +83,13 @@
         NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWFullScreenCell" owner:self options:nil];
         cell = [cellArray objectAtIndex: 0];
     }
+    NSLog(@"Adding target to selector");
+    [cell.schedule addTarget:self action:@selector(pushSchedule) forControlEvents:UIControlEventTouchUpInside];
     return cell;
+}
+
+-(IBAction) pushSchedule  {
+    [self.navigationController pushViewController:[[[SAWTimingViewController alloc]initWithNibName:@"SAWTimingViewController" bundle:nil]autorelease] animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
