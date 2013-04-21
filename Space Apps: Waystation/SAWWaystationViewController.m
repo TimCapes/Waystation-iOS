@@ -8,6 +8,7 @@
 
 #import "SAWWaystationViewController.h"
 #import "SAWSineWaveView.h"
+#import "SAWPhotoViewController.h"
 #import "SAWAppDelegate.h"
 @interface SAWWaystationViewController (){
    // CAShapeLayer *rectLayer;
@@ -31,7 +32,7 @@
     [self.root showLeftController:YES];
 }
 - (IBAction)spotButton:(id)sender {
-    [self.root showRightController:YES];
+    [self.navigationController pushViewController:[[[SAWPhotoViewController alloc]initWithNibName:@"SAWPhotoViewController" bundle:nil]autorelease] animated:YES];
 }
 
 - (void)viewDidLoad
@@ -73,7 +74,7 @@
     NSMutableString *latitude = [NSMutableString stringWithFormat:@"%f",self.mapView.userLocation.location.coordinate.latitude];
     NSMutableString *longitude = [NSMutableString stringWithFormat:@"%f",self.mapView.userLocation.location.coordinate.longitude];
     return [NSMutableDictionary dictionaryWithObjectsAndKeys:
-            self.placemark.locality, @"City", self.placemark.administrativeArea, @"StateProv",self.placemark.country, @"Country", date, @"Date",@"longitude",longitude,@"latitude",latitude, nil];
+            self.placemark.locality, @"city", self.placemark.administrativeArea, @"stateprov",self.placemark.country, @"country", date, @"date",longitude,@"lng",latitude,@"lat", nil];
     //
     // self.mapView.userLocation.location.coordinate.longitude, @"Longitude", self.mapView.userLocation.location.coordinate.latitude, @"Latitude",
 }

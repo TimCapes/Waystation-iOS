@@ -58,8 +58,8 @@
 		AC8DB7BF17235C0A00943B9A /* scrubber@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7B617235C0A00943B9A /* scrubber@2x.png */; };
 		AC8DB7C017235C0A00943B9A /* scrubber_dial.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7B717235C0A00943B9A /* scrubber_dial.png */; };
 		AC8DB7C117235C0A00943B9A /* scrubber_dial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7B817235C0A00943B9A /* scrubber_dial@2x.png */; };
-		AC8DB7D31723626D00943B9A /* _capture1.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7C31723626D00943B9A /* _capture1.png */; };
-		AC8DB7D41723626D00943B9A /* _capture2.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7C41723626D00943B9A /* _capture2.png */; };
+		AC8DB7D31723626D00943B9A /* _capture1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7C31723626D00943B9A /* _capture1@2x.png */; };
+		AC8DB7D41723626D00943B9A /* _capture2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7C41723626D00943B9A /* _capture2@2x.png */; };
 		AC8DB7D51723626D00943B9A /* btn_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7C51723626D00943B9A /* btn_camera.png */; };
 		AC8DB7D61723626D00943B9A /* btn_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7C61723626D00943B9A /* btn_camera@2x.png */; };
 		AC8DB7D71723626D00943B9A /* btn_send.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7C71723626D00943B9A /* btn_send.png */; };
@@ -74,6 +74,8 @@
 		AC8DB7E01723626D00943B9A /* textbox_comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7D01723626D00943B9A /* textbox_comment@2x.png */; };
 		AC8DB7E11723626D00943B9A /* textbox_name.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7D11723626D00943B9A /* textbox_name.png */; };
 		AC8DB7E21723626D00943B9A /* textbox_name@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7D21723626D00943B9A /* textbox_name@2x.png */; };
+		AC8DB7E917240B2100943B9A /* SAWPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */; };
+		AC8DB7EA17240B2100943B9A /* SAWPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,8 +141,8 @@
 		AC8DB7B617235C0A00943B9A /* scrubber@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scrubber@2x.png"; sourceTree = "<group>"; };
 		AC8DB7B717235C0A00943B9A /* scrubber_dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrubber_dial.png; sourceTree = "<group>"; };
 		AC8DB7B817235C0A00943B9A /* scrubber_dial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scrubber_dial@2x.png"; sourceTree = "<group>"; };
-		AC8DB7C31723626D00943B9A /* _capture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _capture1.png; sourceTree = "<group>"; };
-		AC8DB7C41723626D00943B9A /* _capture2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _capture2.png; sourceTree = "<group>"; };
+		AC8DB7C31723626D00943B9A /* _capture1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "_capture1@2x.png"; sourceTree = "<group>"; };
+		AC8DB7C41723626D00943B9A /* _capture2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "_capture2@2x.png"; sourceTree = "<group>"; };
 		AC8DB7C51723626D00943B9A /* btn_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_camera.png; sourceTree = "<group>"; };
 		AC8DB7C61723626D00943B9A /* btn_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_camera@2x.png"; sourceTree = "<group>"; };
 		AC8DB7C71723626D00943B9A /* btn_send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_send.png; sourceTree = "<group>"; };
@@ -155,6 +157,9 @@
 		AC8DB7D01723626D00943B9A /* textbox_comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textbox_comment@2x.png"; sourceTree = "<group>"; };
 		AC8DB7D11723626D00943B9A /* textbox_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbox_name.png; sourceTree = "<group>"; };
 		AC8DB7D21723626D00943B9A /* textbox_name@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textbox_name@2x.png"; sourceTree = "<group>"; };
+		AC8DB7E617240B2100943B9A /* SAWPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAWPhotoViewController.h; path = ../SAWPhotoViewController.h; sourceTree = "<group>"; };
+		AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAWPhotoViewController.m; path = ../SAWPhotoViewController.m; sourceTree = "<group>"; };
+		AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SAWPhotoViewController.xib; path = ../SAWPhotoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +238,9 @@
 				AC8DB79A172300A300943B9A /* RightController.m */,
 				AC8DB79B172300A300943B9A /* LeftController.h */,
 				AC8DB79C172300A400943B9A /* LeftController.m */,
+				AC8DB7E617240B2100943B9A /* SAWPhotoViewController.h */,
+				AC8DB7E717240B2100943B9A /* SAWPhotoViewController.m */,
+				AC8DB7E817240B2100943B9A /* SAWPhotoViewController.xib */,
 				AC8DB7A1172305A000943B9A /* Default-568h@2x.png */,
 				AC8DB74A1722FBB300943B9A /* Supporting Files */,
 			);
@@ -297,8 +305,8 @@
 		AC8DB7C21723626D00943B9A /* waystation_cutups_capture */ = {
 			isa = PBXGroup;
 			children = (
-				AC8DB7C31723626D00943B9A /* _capture1.png */,
-				AC8DB7C41723626D00943B9A /* _capture2.png */,
+				AC8DB7C31723626D00943B9A /* _capture1@2x.png */,
+				AC8DB7C41723626D00943B9A /* _capture2@2x.png */,
 				AC8DB7C51723626D00943B9A /* btn_camera.png */,
 				AC8DB7C61723626D00943B9A /* btn_camera@2x.png */,
 				AC8DB7C71723626D00943B9A /* btn_send.png */,
@@ -310,8 +318,8 @@
 				AC8DB7CD1723626D00943B9A /* icon_wave.png */,
 				AC8DB7CE1723626D00943B9A /* icon_wave@2x.png */,
 				AC8DB7CF1723626D00943B9A /* textbox_comment.png */,
-				AC8DB7D01723626D00943B9A /* textbox_comment@2x.png */,
 				AC8DB7D11723626D00943B9A /* textbox_name.png */,
+				AC8DB7D01723626D00943B9A /* textbox_comment@2x.png */,
 				AC8DB7D21723626D00943B9A /* textbox_name@2x.png */,
 			);
 			path = waystation_cutups_capture;
@@ -402,8 +410,8 @@
 				AC8DB7BF17235C0A00943B9A /* scrubber@2x.png in Resources */,
 				AC8DB7C017235C0A00943B9A /* scrubber_dial.png in Resources */,
 				AC8DB7C117235C0A00943B9A /* scrubber_dial@2x.png in Resources */,
-				AC8DB7D31723626D00943B9A /* _capture1.png in Resources */,
-				AC8DB7D41723626D00943B9A /* _capture2.png in Resources */,
+				AC8DB7D31723626D00943B9A /* _capture1@2x.png in Resources */,
+				AC8DB7D41723626D00943B9A /* _capture2@2x.png in Resources */,
 				AC8DB7D51723626D00943B9A /* btn_camera.png in Resources */,
 				AC8DB7D61723626D00943B9A /* btn_camera@2x.png in Resources */,
 				AC8DB7D71723626D00943B9A /* btn_send.png in Resources */,
@@ -418,6 +426,7 @@
 				AC8DB7E01723626D00943B9A /* textbox_comment@2x.png in Resources */,
 				AC8DB7E11723626D00943B9A /* textbox_name.png in Resources */,
 				AC8DB7E21723626D00943B9A /* textbox_name@2x.png in Resources */,
+				AC8DB7EA17240B2100943B9A /* SAWPhotoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +446,7 @@
 				AC8DB79D172300A500943B9A /* RightController.m in Sources */,
 				AC8DB79E172300A500943B9A /* LeftController.m in Sources */,
 				AC8DB7AC1723459100943B9A /* SAWSineWaveView.m in Sources */,
+				AC8DB7E917240B2100943B9A /* SAWPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +559,7 @@
 				AC8DB75F1722FBB400943B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

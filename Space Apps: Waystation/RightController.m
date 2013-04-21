@@ -12,6 +12,7 @@
 #import "PhotoViewController.h"
 #import <Twitter/Twitter.h>
 #import <Accounts/Accounts.h>
+
 @implementation RightController
 
 @synthesize tableView=_tableView;
@@ -156,19 +157,30 @@
 }
 
 - (void) postToAPI {
-SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
-//NSMutableDictionary *myDictionary= [appDelegate.waystation addressForSending];
-self.myData =[[[NSMutableData alloc] init] autorelease];
-NSError *error;
-NSData *jsonPayload = [NSJSONSerialization dataWithJSONObject:appDelegate.dataForTweet options:NSJSONWritingPrettyPrinted error:&error];
-
+    SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
+    //NSMutableDictionary *myDictionary= [appDelegate.waystation addressForSending];
+    self.myData =[[[NSMutableData alloc] init] autorelease];
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:appDelegate.dataForTweet
+                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                         error:&error];
+    
+//    if (! jsonData) {
+//        NSLog(@"Got an error: %@", error);
+//    } else {
+        NSString *jsonPayload = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    // } //appDelegate.dataForTweet options:NSJSONWritingPrettyPrinted error:&error];
+    NSLog (@"%@",appDelegate.dataForTweet);
+    NSLog (@"%@",jsonPayload);
 NSURL *url = [NSURL URLWithString:@"http://waystation-api.herokuapp.com/sightings"];
 NSMutableURLRequest *request = [[[NSMutableURLRequest alloc] initWithURL:url] autorelease];
 [request setHTTPMethod:@"POST"];
 [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
 [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-[request setValue:[NSString stringWithFormat:@"%d", [jsonPayload length]] forHTTPHeaderField:@"Content-Length"];
-[request setHTTPBody: jsonPayload];
+    NSString *escapedDataString = [jsonPayload stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [request setValue:[NSString stringWithFormat:@"%d", [escapedDataString length]] forHTTPHeaderField:@"Content-Length"];
+[request setHTTPBody:[escapedDataString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES]];
+    //[request setHTTPBody: jsonData];
 self.myConnection = [NSURLConnection connectionWithRequest:request delegate:self];
 
 }
