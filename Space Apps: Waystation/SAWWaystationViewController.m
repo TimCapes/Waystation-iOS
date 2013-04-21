@@ -16,6 +16,8 @@
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (nonatomic, strong) SAWSineWaveView *sineWave;
 @property (nonatomic, strong) UIProgressView *progressView;
+@property CLLocationCoordinate2D latestCoordinate;
+
 @end
 
 @implementation SAWWaystationViewController
@@ -52,7 +54,7 @@
 
 - (void) getSpaceStationPosition {
     self.myData = [[[NSMutableData alloc] initWithCapacity:0] autorelease];
-    NSMutableString *myURL = [NSMutableString stringWithFormat:@"http://waystation-api.herokuapp.com/iss/current_projection"];//.json?callback="];//"http://open-notify-api.herokuapp.com/iss-now.json"
+    NSMutableString *myURL = [NSMutableString stringWithFormat:@"http://open-notify-api.herokuapp.com/iss-now.json"];//.json?callback="];////"http://waystation-api.herokuapp.com/iss/current_projection"
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:myURL]
                                                            cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
                                                        timeoutInterval:15];
@@ -78,6 +80,7 @@
     [_mapView release];
     [_greetings release];
     [_scrollView release];
+    [_iss release];
     [super dealloc];
 }
 - (NSMutableDictionary *) addressForSending {
@@ -101,7 +104,9 @@
         //[self.scrollView setFrame:CGRectMake(0,500,200,320)];
         [self.view sendSubviewToBack:self.greetings];
         [self.mapView setFrame:CGRectMake(0,0,568,320)];
+        [self centerMapOnSpaceStation];
         [self.sineWave setFrame:CGRectMake(0,0,568,320)];
+        [self.iss setFrame:CGRectMake(254,130,60,54)];
         //self.progressView = [[[UIProgressView alloc]initWithFrame:CGRectMake(20,280,540,300)]autorelease];
         //[self.progressView setFrame:CGRectMake];
         [self.view addSubview: self.progressView];
@@ -109,6 +114,8 @@
 
         [self.mapView setFrame:CGRectMake(0,0,320,330)];
         [self.sineWave setFrame:CGRectMake(0,0,320,330)];
+        [self centerMapOnSpaceStation];
+        [self.iss setFrame:CGRectMake(130,157,60,54)];
         [self.progressView removeFromSuperview];
         self.progressView = nil;
         //[self.scrollView setFrame:CGRectMake(0,368,320,200)];
@@ -136,23 +143,24 @@
     NSMutableDictionary *myDataDictionary = [myDictionary objectForKey: @"data"];
     NSMutableDictionary *coordinate = [myDataDictionary objectForKey:@"iss_position"];
     NSLog(@"My Coordinate: %@", coordinate);
-    NSString *latitude = [coordinate objectForKey:@"latitude"];
-    NSString *longitude = [coordinate objectForKey:@"longitude"];
+    NSString *latitude = [NSString stringWithFormat:@"%@",[coordinate objectForKey:@"latitude"]];
+    NSString *longitude = [NSString stringWithFormat:@"%@",[coordinate objectForKey:@"longitude"]];
     NSLog(@"My latitude %@", latitude);
     NSLog(@"My longitude %@", longitude);
    // self.mapView.centerCoordinate = CLLocationCoordinate2DMake(, );
+    //CLLocationDegrees *lat = CLLocation//(CLLocationDegrees *)(CGFloat)[latitude floatValue];
+    //CLLocationDegrees *lng = (CLLocationDegrees *)(CGFloat)[longitude floatValue];
+    self.latestCoordinate = CLLocationCoordinate2DMake([latitude floatValue],[longitude floatValue]);
     [self centerMapOnSpaceStation];
 }
 - (void) centerMapOnSpaceStation {
-   
+    [self.mapView setCenterCoordinate:self.latestCoordinate animated: YES];
+    
 }
-
-
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     [self.myData appendData:data];
     NSLog(@"Got Data");
-    
 }
 
 

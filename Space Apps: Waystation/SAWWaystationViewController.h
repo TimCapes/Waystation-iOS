@@ -17,6 +17,7 @@
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) MKPlacemark *placemark;
 @property(nonatomic, retain) NSMutableData *myData;
+@property (retain, nonatomic) IBOutlet UIImageView *iss;
 @property(nonatomic, retain) NSURLConnection *myConnection;
 
 -(NSMutableDictionary *) addressForSending;
