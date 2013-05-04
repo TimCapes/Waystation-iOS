@@ -77,7 +77,7 @@
     // Create the completion handler block.
     [tweetViewController setCompletionHandler:^(TWTweetComposeViewControllerResult result) {
         NSString *output;
-        
+    
         switch (result) {
             case TWTweetComposeViewControllerResultCancelled:
                 // The cancel button was tapped.
