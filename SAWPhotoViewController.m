@@ -64,6 +64,7 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (IBAction)sendTweet:(id)sender {
+    NSLog(@"SendTweet Called");
     SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
     TWTweetComposeViewController *tweetViewController = [[TWTweetComposeViewController alloc] init];
     NSMutableString *stringToAppend = [NSMutableString stringWithFormat: @" (via @waystationapp) from "];

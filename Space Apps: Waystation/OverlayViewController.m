@@ -103,9 +103,7 @@ enum
     self.startStopButton = nil;
     self.timedButton = nil;
     self.cancelButton = nil;
-    
     self.cameraTimer = nil;
-    
     [super viewDidUnload];
 }
 
@@ -128,7 +126,7 @@ enum
 - (void)setupImagePicker:(UIImagePickerControllerSourceType)sourceType
 {
     self.imagePickerController.sourceType = sourceType;
-    
+    self.imagePickerController.cameraDevice = UIImagePickerControllerCameraDeviceFront;
     if (sourceType == UIImagePickerControllerSourceTypeCamera)
     {
         // user wants to use the camera interface
