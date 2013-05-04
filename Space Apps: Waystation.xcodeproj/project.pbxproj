@@ -14,6 +14,7 @@
 		AC846D601735A90F00D4B062 /* SAWStationPassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC846D5F1735A90E00D4B062 /* SAWStationPassCell.xib */; };
 		AC846D631735A92300D4B062 /* SAWStationPassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC846D621735A92300D4B062 /* SAWStationPassCell.m */; };
 		AC846D651735C32600D4B062 /* weather in Resources */ = {isa = PBXBuildFile; fileRef = AC846D641735C32600D4B062 /* weather */; };
+		AC846D671735C43900D4B062 /* notify in Resources */ = {isa = PBXBuildFile; fileRef = AC846D661735C43800D4B062 /* notify */; };
 		AC8DB7441722FBB300943B9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7431722FBB300943B9A /* UIKit.framework */; };
 		AC8DB7461722FBB300943B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7451722FBB300943B9A /* Foundation.framework */; };
 		AC8DB7481722FBB300943B9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7471722FBB300943B9A /* CoreGraphics.framework */; };
@@ -102,6 +103,7 @@
 		AC846D611735A92200D4B062 /* SAWStationPassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWStationPassCell.h; sourceTree = "<group>"; };
 		AC846D621735A92300D4B062 /* SAWStationPassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWStationPassCell.m; sourceTree = "<group>"; };
 		AC846D641735C32600D4B062 /* weather */ = {isa = PBXFileReference; lastKnownFileType = folder; path = weather; sourceTree = "<group>"; };
+		AC846D661735C43800D4B062 /* notify */ = {isa = PBXFileReference; lastKnownFileType = folder; path = notify; sourceTree = "<group>"; };
 		AC8DB7401722FBB300943B9A /* Space Apps: Waystation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Apps: Waystation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8DB7431722FBB300943B9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC8DB7451722FBB300943B9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -299,6 +301,7 @@
 				AC846D5D17359B6400D4B062 /* Gotham-Medium.otf */,
 				AC8DB88817246AB000943B9A /* waystationTimingView@2x.jpg */,
 				AC8DB8811724632600943B9A /* leftMenuBackground@2x.png */,
+				AC846D661735C43800D4B062 /* notify */,
 				AC846D641735C32600D4B062 /* weather */,
 				AC8DB7C21723626D00943B9A /* waystation_cutups_capture */,
 				AC8DB7841722FCF100943B9A /* tick.aiff */,
@@ -487,6 +490,7 @@
 				AC846D5E17359B6400D4B062 /* Gotham-Medium.otf in Resources */,
 				AC846D601735A90F00D4B062 /* SAWStationPassCell.xib in Resources */,
 				AC846D651735C32600D4B062 /* weather in Resources */,
+				AC846D671735C43900D4B062 /* notify in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
