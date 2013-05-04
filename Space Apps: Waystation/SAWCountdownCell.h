@@ -10,4 +10,15 @@
 
 @interface SAWCountdownCell : UITableViewCell
 
+@property (retain, nonatomic) IBOutlet UILabel *countdownText;
+@property (retain, nonatomic) IBOutlet UILabel *cityText;
+@property (retain, nonatomic) IBOutlet UILabel *numHoursText;
+@property (retain, nonatomic) IBOutlet UILabel *hoursLabelText;
+@property (retain, nonatomic) IBOutlet UILabel *numMinutesText;
+@property (retain, nonatomic) IBOutlet UILabel *minutesLabelText;
+@property (retain, nonatomic) IBOutlet UILabel *numSecondsText;
+@property (retain, nonatomic) IBOutlet UILabel *secondsLabelText;
+
+- (void) setup;
+
 @end

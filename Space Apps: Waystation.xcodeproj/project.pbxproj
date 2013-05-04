@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC846D581735712500D4B062 /* SAWCountdownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC846D571735712500D4B062 /* SAWCountdownCell.m */; };
 		AC846D5A1735715000D4B062 /* SAWCountdownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC846D591735715000D4B062 /* SAWCountdownCell.xib */; };
+		AC846D5C17359B5600D4B062 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC846D5B17359B5600D4B062 /* Gotham-Light.otf */; };
+		AC846D5E17359B6400D4B062 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC846D5D17359B6400D4B062 /* Gotham-Medium.otf */; };
 		AC8DB7441722FBB300943B9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7431722FBB300943B9A /* UIKit.framework */; };
 		AC8DB7461722FBB300943B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7451722FBB300943B9A /* Foundation.framework */; };
 		AC8DB7481722FBB300943B9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7471722FBB300943B9A /* CoreGraphics.framework */; };
@@ -91,6 +93,8 @@
 		AC846D561735712400D4B062 /* SAWCountdownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWCountdownCell.h; sourceTree = "<group>"; };
 		AC846D571735712500D4B062 /* SAWCountdownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWCountdownCell.m; sourceTree = "<group>"; };
 		AC846D591735715000D4B062 /* SAWCountdownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWCountdownCell.xib; sourceTree = "<group>"; };
+		AC846D5B17359B5600D4B062 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		AC846D5D17359B6400D4B062 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
 		AC8DB7401722FBB300943B9A /* Space Apps: Waystation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Apps: Waystation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8DB7431722FBB300943B9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC8DB7451722FBB300943B9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -281,6 +285,8 @@
 		AC8DB74A1722FBB300943B9A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC846D5B17359B5600D4B062 /* Gotham-Light.otf */,
+				AC846D5D17359B6400D4B062 /* Gotham-Medium.otf */,
 				AC8DB88817246AB000943B9A /* waystationTimingView@2x.jpg */,
 				AC8DB8811724632600943B9A /* leftMenuBackground@2x.png */,
 				AC8DB7C21723626D00943B9A /* waystation_cutups_capture */,
@@ -466,6 +472,8 @@
 				AC8DB88717246A8800943B9A /* SAWTimingViewController.xib in Resources */,
 				AC8DB88917246AB100943B9A /* waystationTimingView@2x.jpg in Resources */,
 				AC846D5A1735715000D4B062 /* SAWCountdownCell.xib in Resources */,
+				AC846D5C17359B5600D4B062 /* Gotham-Light.otf in Resources */,
+				AC846D5E17359B6400D4B062 /* Gotham-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

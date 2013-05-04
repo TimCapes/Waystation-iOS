@@ -9,6 +9,7 @@
 #import "SAWTimingViewController.h"
 #import "SAWPhotoViewController.h"
 #import "SAWAppDelegate.h"
+#import "SAWCountdownCell.h"
 @interface SAWTimingViewController ()
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
 
@@ -58,19 +59,17 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SAWFullScreenCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SAWFullScreenCell"];
+    SAWCountdownCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SAWCountdownCell"];
     if (!cell) {
-        NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWFullScreenCell" owner:self options:nil];
+        NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWCountdownCell" owner:self options:nil];
         cell = [cellArray objectAtIndex: 0];
     }
-    NSLog(@"Adding target to selector");
-    [cell.schedule addTarget:self action:@selector(pushSchedule) forControlEvents:UIControlEventTouchUpInside];
-    [cell.homeButton addTarget:self action:@selector(pushHome) forControlEvents:UIControlEventTouchUpInside];
+    [cell setup];
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
-    return 568;
+    return 95;
 }
 - (NSString *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
     return @"";
