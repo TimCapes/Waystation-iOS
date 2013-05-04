@@ -10,6 +10,8 @@
 #import "SAWPhotoViewController.h"
 #import "SAWAppDelegate.h"
 #import "SAWCountdownCell.h"
+#import "SAWStationPassCell.h"
+
 @interface SAWTimingViewController ()
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
 
@@ -38,6 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -55,21 +58,39 @@
 }
 
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 4;
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    SAWCountdownCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SAWCountdownCell"];
-    if (!cell) {
-        NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWCountdownCell" owner:self options:nil];
-        cell = [cellArray objectAtIndex: 0];
+    if(indexPath.row==0){
+        SAWCountdownCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SAWCountdownCell"];
+        if (!cell) {
+            NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWCountdownCell" owner:self options:nil];
+            cell = [cellArray objectAtIndex: 0];
+        }
+        [cell setup];
+
+        return cell;
+    } else {
+        SAWStationPassCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SAWStationPassCell"];
+        if (!cell) {
+            NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWStationPassCell" owner:self options:nil];
+            cell = [cellArray objectAtIndex: 0];
+        }
+        [cell setup];
+        if (indexPath.row > 2) {
+            cell.timeText.text =@"11:59";
+        }
+        return cell;
     }
-    [cell setup];
-    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
-    return 95;
+    if (indexPath.row==0){
+        return 95;
+    } else {
+        return 120;
+    }
 }
 - (NSString *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
     return @"";

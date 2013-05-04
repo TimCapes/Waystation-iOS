@@ -11,6 +11,8 @@
 		AC846D5A1735715000D4B062 /* SAWCountdownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC846D591735715000D4B062 /* SAWCountdownCell.xib */; };
 		AC846D5C17359B5600D4B062 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC846D5B17359B5600D4B062 /* Gotham-Light.otf */; };
 		AC846D5E17359B6400D4B062 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC846D5D17359B6400D4B062 /* Gotham-Medium.otf */; };
+		AC846D601735A90F00D4B062 /* SAWStationPassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC846D5F1735A90E00D4B062 /* SAWStationPassCell.xib */; };
+		AC846D631735A92300D4B062 /* SAWStationPassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC846D621735A92300D4B062 /* SAWStationPassCell.m */; };
 		AC8DB7441722FBB300943B9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7431722FBB300943B9A /* UIKit.framework */; };
 		AC8DB7461722FBB300943B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7451722FBB300943B9A /* Foundation.framework */; };
 		AC8DB7481722FBB300943B9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7471722FBB300943B9A /* CoreGraphics.framework */; };
@@ -95,6 +97,9 @@
 		AC846D591735715000D4B062 /* SAWCountdownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWCountdownCell.xib; sourceTree = "<group>"; };
 		AC846D5B17359B5600D4B062 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
 		AC846D5D17359B6400D4B062 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
+		AC846D5F1735A90E00D4B062 /* SAWStationPassCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWStationPassCell.xib; sourceTree = "<group>"; };
+		AC846D611735A92200D4B062 /* SAWStationPassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWStationPassCell.h; sourceTree = "<group>"; };
+		AC846D621735A92300D4B062 /* SAWStationPassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWStationPassCell.m; sourceTree = "<group>"; };
 		AC8DB7401722FBB300943B9A /* Space Apps: Waystation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Apps: Waystation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8DB7431722FBB300943B9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC8DB7451722FBB300943B9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -268,6 +273,9 @@
 				AC846D561735712400D4B062 /* SAWCountdownCell.h */,
 				AC846D571735712500D4B062 /* SAWCountdownCell.m */,
 				AC846D591735715000D4B062 /* SAWCountdownCell.xib */,
+				AC846D611735A92200D4B062 /* SAWStationPassCell.h */,
+				AC846D621735A92300D4B062 /* SAWStationPassCell.m */,
+				AC846D5F1735A90E00D4B062 /* SAWStationPassCell.xib */,
 				AC8DB79B172300A300943B9A /* LeftController.h */,
 				AC8DB79C172300A400943B9A /* LeftController.m */,
 				AC8DB7ED1724601400943B9A /* SAWFullScreenCell.h */,
@@ -474,6 +482,7 @@
 				AC846D5A1735715000D4B062 /* SAWCountdownCell.xib in Resources */,
 				AC846D5C17359B5600D4B062 /* Gotham-Light.otf in Resources */,
 				AC846D5E17359B6400D4B062 /* Gotham-Medium.otf in Resources */,
+				AC846D601735A90F00D4B062 /* SAWStationPassCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +506,7 @@
 				AC8DB7EF1724601900943B9A /* SAWFullScreenCell.m in Sources */,
 				AC8DB88617246A8800943B9A /* SAWTimingViewController.m in Sources */,
 				AC846D581735712500D4B062 /* SAWCountdownCell.m in Sources */,
+				AC846D631735A92300D4B062 /* SAWStationPassCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

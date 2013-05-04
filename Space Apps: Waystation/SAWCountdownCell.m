@@ -39,6 +39,7 @@
     [super dealloc];
 }
 - (void) setup {
+    
     self.numHoursText.font = [UIFont fontWithName:@"Gotham-Medium" size:27];
     self.numHoursText.textColor = [UIColor colorWithRed:35/255.0 green:101/225.0 blue:166/255.0 alpha:1];
     self.numHoursText.highlightedTextColor = [UIColor colorWithRed:35/255.0 green:101/225.0 blue:166/255.0 alpha:1];
@@ -70,6 +71,7 @@
     self.cityText.font = [UIFont fontWithName:@"Gotham-Medium" size:16];
     self.cityText.textColor = [UIColor colorWithRed:35/255.0 green:101/225.0 blue:166/255.0 alpha:1];
     self.cityText.highlightedTextColor = [UIColor colorWithRed:35/255.0 green:101/225.0 blue:166/255.0 alpha:1];
-
+    
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 @end
