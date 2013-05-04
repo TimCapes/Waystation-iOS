@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC846D581735712500D4B062 /* SAWCountdownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC846D571735712500D4B062 /* SAWCountdownCell.m */; };
+		AC846D5A1735715000D4B062 /* SAWCountdownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC846D591735715000D4B062 /* SAWCountdownCell.xib */; };
 		AC8DB7441722FBB300943B9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7431722FBB300943B9A /* UIKit.framework */; };
 		AC8DB7461722FBB300943B9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7451722FBB300943B9A /* Foundation.framework */; };
 		AC8DB7481722FBB300943B9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8DB7471722FBB300943B9A /* CoreGraphics.framework */; };
@@ -86,6 +88,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC846D561735712400D4B062 /* SAWCountdownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWCountdownCell.h; sourceTree = "<group>"; };
+		AC846D571735712500D4B062 /* SAWCountdownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWCountdownCell.m; sourceTree = "<group>"; };
+		AC846D591735715000D4B062 /* SAWCountdownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAWCountdownCell.xib; sourceTree = "<group>"; };
 		AC8DB7401722FBB300943B9A /* Space Apps: Waystation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Apps: Waystation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8DB7431722FBB300943B9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AC8DB7451722FBB300943B9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -256,6 +261,9 @@
 				AC8DB88317246A7F00943B9A /* SAWTimingViewController.h */,
 				AC8DB88417246A8100943B9A /* SAWTimingViewController.m */,
 				AC8DB88517246A8400943B9A /* SAWTimingViewController.xib */,
+				AC846D561735712400D4B062 /* SAWCountdownCell.h */,
+				AC846D571735712500D4B062 /* SAWCountdownCell.m */,
+				AC846D591735715000D4B062 /* SAWCountdownCell.xib */,
 				AC8DB79B172300A300943B9A /* LeftController.h */,
 				AC8DB79C172300A400943B9A /* LeftController.m */,
 				AC8DB7ED1724601400943B9A /* SAWFullScreenCell.h */,
@@ -457,6 +465,7 @@
 				AC8DB8821724632800943B9A /* leftMenuBackground@2x.png in Resources */,
 				AC8DB88717246A8800943B9A /* SAWTimingViewController.xib in Resources */,
 				AC8DB88917246AB100943B9A /* waystationTimingView@2x.jpg in Resources */,
+				AC846D5A1735715000D4B062 /* SAWCountdownCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +488,7 @@
 				AC8DB7E917240B2100943B9A /* SAWPhotoViewController.m in Sources */,
 				AC8DB7EF1724601900943B9A /* SAWFullScreenCell.m in Sources */,
 				AC8DB88617246A8800943B9A /* SAWTimingViewController.m in Sources */,
+				AC846D581735712500D4B062 /* SAWCountdownCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

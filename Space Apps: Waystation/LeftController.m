@@ -12,6 +12,7 @@
 #import "SAWAppDelegate.h"
 #import "SAWFullScreenCell.h"
 #import "SAWTimingViewController.h"
+#import "SAWWaystationViewController.h"
 
 @implementation LeftController
 
@@ -85,15 +86,34 @@
     }
     NSLog(@"Adding target to selector");
     [cell.schedule addTarget:self action:@selector(pushSchedule) forControlEvents:UIControlEventTouchUpInside];
+    [cell.homeButton addTarget:self action:@selector(pushHome) forControlEvents:UIControlEventTouchUpInside];
     return cell;
 }
 
--(IBAction) pushSchedule  {
+- (IBAction) pushSchedule  {
     NSLog(@"push reached");
     //wrong navigationController
     SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [self.navigationController pushViewController:[[[SAWTimingViewController alloc]initWithNibName:@"SAWTimingViewController" bundle:nil]autorelease] animated:YES];
-    
+    SAWTimingViewController *mainController = [[[SAWTimingViewController alloc]initWithNibName:@"SAWTimingViewController" bundle:nil] autorelease];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
+    navController.navigationBar.hidden = YES;
+    [appDelegate.menuController setRootViewController:navController];
+    [self.root showLeftController:NO];
+    [self.root showRootController:YES];
+}
+
+- (IBAction) pushHome {
+    NSLog(@"push reached");
+    //wrong navigationController
+    SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
+    SAWWaystationViewController *mainController = [[[SAWWaystationViewController alloc]initWithNibName:@"SAWWaystationViewController" bundle:nil] autorelease];
+    mainController.root = appDelegate.menuController;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
+    navController.navigationBar.hidden = YES;
+    [appDelegate.menuController setRootViewController:navController];
+    [self.root showLeftController:NO];
+    [self.root showRootController:YES];
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
@@ -110,15 +130,6 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    // set the root controller
-//    DDMenuController *menuController = (DDMenuController*)((SAAppDelegate*)[[UIApplication sharedApplication] delegate]).menuController;
-//    FeedController *controller = [[FeedController alloc] init];
-//    controller.title = [NSString stringWithFormat:@"Cell %i", indexPath.row];
-//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
-//
-//    [menuController setRootController:navController animated:YES];
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     
 }

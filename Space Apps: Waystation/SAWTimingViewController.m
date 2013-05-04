@@ -9,8 +9,8 @@
 #import "SAWTimingViewController.h"
 #import "SAWPhotoViewController.h"
 #import "SAWAppDelegate.h"
-
 @interface SAWTimingViewController ()
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -25,14 +25,15 @@
     return self;
 }
 - (IBAction)spotTheSpaceStation:(id)sender {
-//    [self.navigationController pushViewController:[[[SAWPhotoViewController alloc]initWithNibName:@"SAWPhotoViewController" bundle:nil]autorelease] animated:YES];
+    NSLog(@"Spot the station called");
+    [self.navigationController pushViewController:[[[SAWPhotoViewController alloc]initWithNibName:@"SAWPhotoViewController" bundle:nil]autorelease] animated:YES];
 }
 - (IBAction)left:(id)sender {
-//    UINavigationController *navController = self.navigationController;
-//    [[navController retain]autorelease];
-//    [self.navigationController popToRootViewControllerAnimated:NO];
+    
+    NSLog(@"Got Here");
+    SAWAppDelegate *appDelegate = (SAWAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.menuController showLeftController:YES];
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -48,6 +49,41 @@
 - (void)dealloc {
     [_spot release];
     [_menuButton release];
+    [_tableView release];
     [super dealloc];
+}
+
+- (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SAWFullScreenCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SAWFullScreenCell"];
+    if (!cell) {
+        NSArray *cellArray = [[NSBundle mainBundle] loadNibNamed:@"SAWFullScreenCell" owner:self options:nil];
+        cell = [cellArray objectAtIndex: 0];
+    }
+    NSLog(@"Adding target to selector");
+    [cell.schedule addTarget:self action:@selector(pushSchedule) forControlEvents:UIControlEventTouchUpInside];
+    [cell.homeButton addTarget:self action:@selector(pushHome) forControlEvents:UIControlEventTouchUpInside];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath {
+    return 568;
+}
+- (NSString *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"";
+}
+
+- (CGFloat) tableView:(UITableView *) tableView heightForHeaderInSection:(NSInteger)section {
+    return 0;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
 }
 @end

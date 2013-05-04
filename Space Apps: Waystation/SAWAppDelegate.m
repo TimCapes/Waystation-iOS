@@ -25,16 +25,11 @@
     
     // Override point for customization after application launch.
     SAWWaystationViewController *mainController = [[[SAWWaystationViewController alloc] initWithNibName:@"SAWWaystationViewController" bundle:nil] autorelease];
-    self.waystation = mainController;
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainController];
     navController.navigationBar.hidden = YES;
-    //    [navController.navigationBar setShadowImage:[[UIImage alloc] init]];
-    //    navController.navigationBar.translucent = YES;
-    //    navController.navigationBar.backgroundColor = [UIColor clearColor];
-    //    navController.navigationBar.   //navController.navigationBar.i
+    
     DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];
     mainController.root = rootController;
-    //DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:mainController];
     _menuController = rootController;
     
     LeftController *leftController = [[LeftController alloc] init];

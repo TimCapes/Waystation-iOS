@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) DDMenuController *menuController;
-@property (strong, nonatomic) SAWWaystationViewController *waystation;
+@property (strong, nonatomic) UINavigationController *navController;
 @property (strong, nonatomic) NSMutableDictionary *dataForTweet;
 
 @end
